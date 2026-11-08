@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Teja Capital Private Limited - explore loan options and calculate estimated EMIs.">
+  <title>Teja Capital Private Limited | Financial Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Teja Capital home">
+      <span class="brand-mark">TC</span>
+      <span class="brand-copy"><strong>TEJA CAPITAL</strong><small>PRIVATE LIMITED</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="mainNav">
+      <a href="#home">Home</a><a href="#loans">Loan Services</a><a href="#about">About</a>
+      <a href="#calculator">EMI Calculator</a><a class="nav-cta" href="#apply">Apply Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">FINANCIAL SERVICES</span>
+        <h1>Your Financial Goals.<br><span>Our Priority.</span></h1>
+        <p>Explore financing options for your personal needs, business plans, education and more. Clear information to help you make informed decisions.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#loans">Explore Loans <span>→</span></a>
+          <a class="button button-outline" href="#calculator">Calculate EMI</a>
+        </div>
+        <p class="hero-note">Personal • Business • Home • Vehicle • Education</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-circle"></div>
+        <div class="art-card">
+          <div class="art-top"><span class="mini-mark">TC</span><span>FINANCIAL PLANNING</span></div>
+          <div class="art-line"></div><div class="art-line short"></div>
+          <div class="art-amount">Plan with confidence.</div>
+          <div class="art-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="art-bottom"><span>SMARTER FINANCIAL CHOICES</span><b>✦</b></div>
+        </div>
+        <div class="floating-chip">Simple. Clear. Convenient.</div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><strong>Multiple</strong><span>Loan categories</span></div>
+      <div><strong>Simple</strong><span>Online enquiry</span></div>
+      <div><strong>Clear</strong><span>Loan information</span></div>
+    </section>
+
+    <section class="section" id="loans">
+      <div class="section-heading">
+        <span class="eyebrow">OUR SERVICES</span>
+        <h2>Find a loan option for <span>your needs</span></h2>
+        <p>Explore the categories below. Availability, eligibility, rates and terms depend on the actual lender and its approval process.</p>
+      </div>
+      <div class="loan-grid">
+        <article class="loan-card"><div class="loan-icon">♙</div><h3>Personal Loan</h3><p>For eligible personal expenses and planned needs.</p><a href="#apply" data-loan="Personal Loan">Enquire now <b>→</b></a></article>
+        <article class="loan-card"><div class="loan-icon">⌂</div><h3>Home Loan</h3><p>Explore financing for buying, building or improving a home.</p><a href="#apply" data-loan="Home Loan">Enquire now <b>→</b></a></article>
+        <article class="loan-card"><div class="loan-icon">▤</div><h3>Business Loan</h3><p>Financing options for eligible business requirements.</p><a href="#apply" data-loan="Business Loan">Enquire now <b>→</b></a></article>
+        <article class="loan-card"><div class="loan-icon">▱</div><h3>Vehicle Loan</h3><p>Explore finance options for cars, bikes and other vehicles.</p><a href="#apply" data-loan="Vehicle Loan">Enquire now <b>→</b></a></article>
+        <article class="loan-card"><div class="loan-icon">✎</div><h3>Education Loan</h3><p>Learn about funding options for eligible education costs.</p><a href="#apply" data-loan="Education Loan">Enquire now <b>→</b></a></article>
+        <article class="loan-card"><div class="loan-icon">▦</div><h3>MSME Loan</h3><p>Explore funding options for micro, small and medium enterprises.</p><a href="#apply" data-loan="MSME Loan">Enquire now <b>→</b></a></article>
+        <article class="loan-card"><div class="loan-icon">♧</div><h3>Agriculture Loan</h3><p>Explore agriculture-related finance from eligible lenders.</p><a href="#apply" data-loan="Agriculture Loan">Enquire now <b>→</b></a></article>
+        <article class="loan-card"><div class="loan-icon">◇</div><h3>Gold Loan</h3><p>Learn about loans secured against eligible gold assets.</p><a href="#apply" data-loan="Gold Loan">Enquire now <b>→</b></a></article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-badge"><span>TC</span><small>TEJA CAPITAL<br>PRIVATE LIMITED</small></div>
+      <div class="about-copy"><span class="eyebrow">ABOUT TEJA CAPITAL</span><h2>Financial information, made <span>simpler.</span></h2>
+        <p>Teja Capital Private Limited aims to provide a clear starting point for people exploring financial services. Use this website to review loan categories, estimate repayments and send an enquiry.</p>
+        <ul><li>Easy-to-understand loan information</li><li>Convenient EMI estimation tool</li><li>Simple enquiry experience</li></ul>
+      </div>
+    </section>
+
+    <section class="section calculator-section" id="calculator">
+      <div class="section-heading">
+        <span class="eyebrow">PLAN YOUR REPAYMENTS</span><h2>EMI <span>Calculator</span></h2>
+        <p>Estimate your monthly instalment by adjusting the loan amount, interest rate and tenure.</p>
+      </div>
+      <div class="calculator">
+        <div class="calculator-controls">
+          <label for="loanAmount">Loan amount <strong id="amountLabel">₹5,00,000</strong></label>
+          <input id="loanAmount" type="range" min="50000" max="5000000" step="10000" value="500000">
+          <div class="range-ends"><span>₹50,000</span><span>₹50,00,000</span></div>
+          <label for="interestRate">Annual interest rate <strong><span id="rateLabel">12</span>%</strong></label>
+          <input id="interestRate" type="range" min="1" max="30" step="0.25" value="12">
+          <div class="range-ends"><span>1%</span><span>30%</span></div>
+          <label for="loanYears">Loan tenure <strong><span id="yearsLabel">3</span> years</strong></label>
+          <input id="loanYears" type="range" min="1" max="30" step="1" value="3">
+          <div class="range-ends"><span>1 year</span><span>30 years</span></div>
+        </div>
+        <div class="emi-result">
+          <span>ESTIMATED MONTHLY EMI</span><strong id="emiValue">₹16,607</strong>
+          <div class="result-divider"></div>
+          <div><span>Principal amount</span><b id="principalValue">₹5,00,000</b></div>
+          <div><span>Total interest</span><b id="interestValue">₹97,852</b></div>
+          <div><span>Total repayment</span><b id="totalValue">₹5,97,852</b></div>
+          <small>This is an illustration, not a loan offer or approval. Actual lender calculations, fees and terms may differ.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="apply-section" id="apply">
+      <div class="apply-copy"><span class="eyebrow">GET IN TOUCH</span><h2>Start with a simple <span>enquiry.</span></h2><p>Share your contact details and the type of loan you are interested in. Do not submit passwords, OTPs, bank PINs or sensitive identity documents through this demo form.</p>
+        <div class="contact-detail"><span>✉</span><div><b>Email</b><small>Update with your official business email</small></div></div>
+        <div class="contact-detail"><span>⌖</span><div><b>Location</b><small>Update with your registered office address</small></div></div>
+      </div>
+      <form class="enquiry-form" id="enquiryForm">
+        <h3>Loan enquiry form</h3>
+        <label for="fullName">Full name</label><input id="fullName" name="fullName" type="text" placeholder="Enter your name" required>
+        <label for="phone">Mobile number</label><input id="phone" name="phone" type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" placeholder="10-digit mobile number" required>
+        <label for="loanType">Loan type</label>
+        <select id="loanType" name="loanType" required><option value="">Select loan type</option><option>Personal Loan</option><option>Home Loan</option><option>Business Loan</option><option>Vehicle Loan</option><option>Education Loan</option><option>MSME Loan</option><option>Agriculture Loan</option><option>Gold Loan</option></select>
+        <label for="message">Message (optional)</label><textarea id="message" name="message" rows="3" placeholder="Tell us briefly what you need"></textarea>
+        <button class="button button-gold form-submit" type="submit">Submit enquiry <span>→</span></button>
+        <p class="form-message" id="formMessage" role="status"></p>
+        <small>Demo only: this form does not transmit or store information. Connect a secure backend before publishing it.</small>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">TC</span><span class="brand-copy"><strong>TEJA CAPITAL</strong><small>PRIVATE LIMITED</small></span></a>
+    <p>Explore financial options with clear information.</p>
+    <div class="footer-links"><a href="#home">Home</a><a href="#loans">Loans</a><a href="#calculator">EMI Calculator</a><a href="#apply">Contact</a></div>
+    <div class="legal">© <span id="year"></span> Teja Capital Private Limited. All rights reserved.<br>Website concept only. The company name, registration status, lending authorisation, rates and services must be verified before public launch.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
